@@ -1,7 +1,7 @@
 # Neural_Network_Charity_Analysis
 
 ## Overview
-Fictional company Alphabet Soup has requested a binary classifier that is capable of predicting whether organizations will be successful if Alphabet Soup provides them funding.  Alphabet Soup has provided a dataset that contains more than 34,000 organizations that have received funding.  This dataset captures the following:
+Fictional company Alphabet Soup requested a binary classifier that is capable of predicting whether organizations will be successful if Alphabet Soup provides them funding.  Alphabet Soup provided a dataset that contained more than 34,000 organizations that received funding from them.  This dataset captured the following:
 
 - EIN and NAME—Identification columns
 - APPLICATION_TYPE—Alphabet Soup application type
@@ -14,6 +14,8 @@ Fictional company Alphabet Soup has requested a binary classifier that is capabl
 - SPECIAL_CONSIDERATIONS—Special consideration for application
 - ASK_AMT—Funding amount requested
 - IS_SUCCESSFUL—Was the money used effectively
+
+A neural network model was created to determine if an organization would be successful or not if Alphabet Soup provided them funding.
 
 
 ## Resources
