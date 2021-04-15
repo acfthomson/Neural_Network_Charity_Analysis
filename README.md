@@ -50,7 +50,7 @@ A neural network model was created to determine if an organization would be succ
 
 ### Compiling, Training, and Evaluating the Model
 #### Initial Model
-The initial attempt at achieving a predictive accuracy of 75% used two hidden layers that featured 80 neurons in the first layer and 30 neurons in the second layer.  Both hidden layers utilized the rectified linear unit (ReLU) activation function.  The output layer utilized the sigmoid function.  This gave a total of 6,061 trainable parameters
+The initial attempt at achieving a predictive accuracy of 75% used two hidden layers that featured 80 neurons in the first layer and 30 neurons in the second layer.  Both hidden layers utilized the rectified linear unit (ReLU) activation function.  The output layer utilized the sigmoid function.  This gave a total of 6,061 trainable parameters and 0 non-trainable parameters.
 
 
 ![initial_model_layers](https://user-images.githubusercontent.com/73897240/114923918-63b39e00-9dfb-11eb-8b07-5c1db7ce24e0.PNG)
@@ -62,5 +62,26 @@ This model gave an accuracy score of 72.5%, which did not meet Alphabet Soup's t
 
 
 #### First Optimization Attempt
+The column 'SPECIAL_CONSIDERATIONS' was dropped for the first attempt at optimizing this model, as it did not appear to add value as a feature.
+
+This optimized model received nearly the same predictive accuracy score as the initial model.
+
+![1st_opt_score](https://user-images.githubusercontent.com/73897240/114925284-e8eb8280-9dfc-11eb-8bd0-119f6c32e891.PNG)
+
+
+#### Second Optimization Attempt
+Additional layers and neurons were added to the model for the second optimization attempt.  The neurons in the first hidden layer were increased to 100 and the neurons in the second layer were increased to 50.  A third layer was added and consisted of 25 neurons.  This gave the model a total of 10, 651 trainable parameters and 0 non-trainable parameters.
+
+![2nd_opt_layers](https://user-images.githubusercontent.com/73897240/114925594-48e22900-9dfd-11eb-85af-390fbcb84c3b.PNG)
+
+The second attempt at optimizing the model gave a slightly better predictive accuracy score of 72.6%, but also had a slightly higher loss than the first optimization and intial model.
+
+![2nd_opt_score](https://user-images.githubusercontent.com/73897240/114925804-8e9ef180-9dfd-11eb-8919-32b2e211d538.PNG)
+
+
+#### Third Optimization Attempt
+
+
+
 
 
