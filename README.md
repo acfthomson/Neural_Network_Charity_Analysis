@@ -70,7 +70,7 @@ This optimized model received nearly the same predictive accuracy score as the i
 
 
 #### Second Optimization Attempt
-Additional layers and neurons were added to the model for the second optimization attempt.  The neurons in the first hidden layer were increased to 100 and the neurons in the second layer were increased to 50.  A third layer was added and consisted of 25 neurons.  This gave the model a total of 10, 651 trainable parameters and 0 non-trainable parameters.
+Additional layers and neurons were added to the model for the second optimization attempt.  The neurons in the first hidden layer were increased to 100 and the neurons in the second layer were increased to 50.  A third layer was added and consisted of 25 neurons.  All three layers utilized the ReLU activation function.  This gave the model a total of 10, 651 trainable parameters and 0 non-trainable parameters.
 
 ![2nd_opt_layers](https://user-images.githubusercontent.com/73897240/114925594-48e22900-9dfd-11eb-85af-390fbcb84c3b.PNG)
 
@@ -80,8 +80,13 @@ The second attempt at optimizing the model gave a slightly better predictive acc
 
 
 #### Third Optimization Attempt
+For the third optimization attempt, the hyperbolic tangent activation function (Tanh).
+
+This slightly degraded the model's predictive accuracy, but still performed better than the initial model and first optimized model.  This model's predictive accuracy was 72.6%.
+
+![3rd_opt_score](https://user-images.githubusercontent.com/73897240/114926798-c5293c00-9dfe-11eb-8640-0c386072cc33.PNG)
 
 
-
-
+## Summary
+Overall, optimizing the initial model did not significantly improve its predictive accuracy.  All four models failed to meet Alphabet Soup's threshold of 75%.  Since Alphabet Soup's request was a essentially a binary classifer, a Support Vector Machine (SVM) could be used.  SVMs are one of the most robust prediction methods and are great for classification and regression analysis.  SVMs use points in space in order to maximize the width of a gap between two categories and maps new points into that space and predicts which category the points belong to based on which side of the gap they are on.  Additional testing and evaluation of Alphabet Soup's data should be conducted in order to determine if an SVM would yield a predicitive accuracy score of 75% or higher.
 
