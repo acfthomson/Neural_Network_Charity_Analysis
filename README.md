@@ -70,7 +70,7 @@ This optimized model received nearly the same predictive accuracy score as the i
 
 
 #### Second Optimization Attempt
-Additional layers and neurons were added to the model for the second optimization attempt.  The neurons in the first hidden layer were increased to 100 and the neurons in the second layer were increased to 50.  A third layer was added and consisted of 25 neurons.  All three layers utilized the ReLU activation function.  This gave the model a total of 10, 651 trainable parameters and 0 non-trainable parameters.
+Additional layers and neurons were added to the model for the second optimization attempt.  The neurons in the first hidden layer were increased to 100 and the neurons in the second layer were increased to 50.  A third layer was added and consisted of 25 neurons.  All three layers utilized the ReLU activation function.  This gave the model a total of 10,651 trainable parameters and 0 non-trainable parameters.
 
 ![2nd_opt_layers](https://user-images.githubusercontent.com/73897240/114925594-48e22900-9dfd-11eb-85af-390fbcb84c3b.PNG)
 
